@@ -1,0 +1,8 @@
+{application, amqp_client,
+ [{description, "RabbitMQ AMQP Client"},
+  {vsn, "v3.2.3"},
+  {modules, []},
+  {registered, [amqp_sup]},
+  {env, [{prefer_ipv6, false}]},
+  {mod, {amqp_client, []}},
+  {applications, [kernel, stdlib]}]}.
